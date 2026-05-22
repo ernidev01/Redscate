@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_1"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            style="@style/AppTheme.titulo_perfil"
+            android:text="Editar Datos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/atras"
+            style="@style/AppTheme.atras_perfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/cerrar"/>
+
+
+        <TextView
+            android:layout_marginTop="43dp"
+            android:id="@+id/nombre_apellido_tw"
+            style="@style/AppTheme.3er_titulo_perfil"
+            android:text="Nombres y Apellidos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <EditText
+            android:id="@+id/nombre_apellido"
+            style="@style/AppTheme.text_view_perfil"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_apellido_tw" />
+
+        <TextView
+            android:id="@+id/edad_tw"
+            style="@style/AppTheme.3er_titulo_perfil"
+            android:text="Edad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_apellido" />
+
+        <EditText
+            android:id="@+id/edad"
+            style="@style/AppTheme.text_view_perfil"
+            android:layout_width="180dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="number"
+            android:maxLength="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edad_tw" />
+
+        <TextView
+            android:id="@+id/rh_tw"
+            style="@style/AppTheme.3er_titulo_perfil"
+            android:layout_marginLeft="10dp"
+            android:text="RH"
+            app:layout_constraintStart_toEndOf="@id/edad"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_apellido" />
+
+        <Spinner
+            android:id="@+id/rh"
+            style="@style/AppTheme.text_view_perfil"
+            android:layout_width="180dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Selecciona RH"
+            android:maxLength="3"
+            app:layout_constraintStart_toEndOf="@+id/edad"
+            app:layout_constraintTop_toBottomOf="@+id/rh_tw" />
+
+        <TextView
+            android:id="@+id/subtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Contacto de emergencia"
+            android:textColor="@color/borde_boton_rojo"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edad" />
+
+        <TextView
+            android:id="@+id/nombre_apellido_emegencia_tw"
+            style="@style/AppTheme.3er_titulo_perfil"
+            android:layout_marginTop="13dp"
+            android:text="Nombres y Apellidos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitulo" />
+
+        <EditText
+            android:id="@+id/nombre_apellido_emergencia"
+            style="@style/AppTheme.text_view_perfil"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_apellido_emegencia_tw" />
+
+        <TextView
+            android:id="@+id/telefono_tw"
+            style="@style/AppTheme.3er_titulo_perfil"
+            android:layout_marginTop="5dp"
+            android:text="Teléfono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombre_apellido_emergencia" />
+
+        <EditText
+            android:id="@+id/telefono"
+            style="@style/AppTheme.text_view_perfil"
+            android:layout_width="180dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="phone"
+            android:maxLength="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefono_tw" />
+        
+
+        <TextView
+            android:id="@+id/btn_actualizar_perfil"
+            style="@style/AppTheme.boton_perfil_perfil"
+            android:background="@drawable/rounded_boton"
+            android:text="GUARDAR DATOS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefono" />
+        <View
+            android:id="@+id/blur_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1d1c1d"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/gifExito"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

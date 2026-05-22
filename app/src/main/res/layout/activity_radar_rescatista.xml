@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadarRescatista">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_1">
+
+
+        <ImageView
+            android:id="@+id/image200"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/anillo_blanci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_200"
+            style="@style/AppTheme.distancia"
+            android:layout_marginTop="20dp"
+            android:text="200m"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image150"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/anillo_blanci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_150"
+            style="@style/AppTheme.distancia"
+            android:layout_marginTop="65dp"
+            android:text="150m"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image100"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/anillo_blanci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_100"
+            style="@style/AppTheme.distancia"
+            android:layout_marginTop="105dp"
+            android:text="100m"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image50"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/anillo_blanci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_50"
+            style="@style/AppTheme.distancia"
+            android:layout_marginTop="145dp"
+            android:text="50m"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<ImageView
+            android:id="@+id/compas_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brujula_1"
+            app:layout_constraintBottom_toBottomOf="@id/image50"
+            app:layout_constraintEnd_toEndOf="@id/image50"
+            app:layout_constraintStart_toStartOf="@id/image50"
+            app:layout_constraintTop_toTopOf="@+id/image50" />
+-->
+        <LinearLayout
+            android:id="@+id/checks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/usuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image200">
+
+            <LinearLayout
+                android:id="@+id/check_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/check_1"
+                        style="@style/AppTheme.check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/check_verde" />
+
+                    <ImageView
+                        android:id="@+id/tres_puntos_1"
+                        style="@style/AppTheme.check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tres_puntos_amarrillo" />
+
+                    <ImageView
+                        android:id="@+id/check_2"
+                        style="@style/AppTheme.check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/reloj" />
+
+                    <ImageView
+                        android:id="@+id/tres_puntos_2"
+                        style="@style/AppTheme.check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tres_puntos_gris" />
+
+                    <ImageView
+                        android:id="@+id/check_3"
+                        style="@style/AppTheme.check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/check_gris" />
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:id="@+id/mensaje_enviado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Buscando sobrevivientes cercanos"
+                    android:textColor="@color/white_1"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checks" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/check_container_2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/distancia_mensaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="RESCATISTA A 50 METROS APROXIMADAMENTE"
+                    android:textColor="@color/white_1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="¡Es momento de que te escuche!"
+                    android:textColor="@color/white_1"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/sonido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_boton"
+                    android:padding="10dp"
+                    android:src="@drawable/sonido" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="50dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_detener"
+            android:text="Sobreviviente:"
+            android:textColor="@color/white_1"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+        />
+
+        <LinearLayout
+            android:id="@+id/btn_detener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_boton_rojo"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detener" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/verdana_bold"
+                android:paddingHorizontal="10dp"
+                android:text="DETENER"
+                android:textColor="@color/borde_boton_rojo"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/blur_background_autoproteccion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#800DB11B"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/blur_background_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FF2330"
+            android:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

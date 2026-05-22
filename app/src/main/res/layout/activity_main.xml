@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="177dp"
+            app:srcCompat="@drawable/logo_redscate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="REDSCATE"
+            android:textColor="@color/white_1"
+            android:textSize="36dp" />
+
+
+        <TextView
+            style="@style/AppTheme.texto_main"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tu seguridad es nuestra prioridad. Regístrate para iniciar"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/et_nombre_inicio"
+            style="@style/AppTheme.texto_main"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Nombre"
+            android:maxLength="15"
+            android:paddingVertical="8dp"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/white_1"
+            android:textSize="16dp"
+            android:singleLine="true"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/ingresar"
+            style="@style/AppTheme.boton_main"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <TextView
+                android:id="@+id/ingresar_2"
+                style="@style/AppTheme.text_main"
+                android:text="INGRESAR"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/rescatista"
+            style="@style/AppTheme.boton_main"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/escudo_1"/>
+            <TextView
+                android:id="@+id/rescatista_2"
+                style="@style/AppTheme.text_main"
+                android:text="SOY RESCATISTA"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

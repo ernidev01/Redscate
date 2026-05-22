@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="340sp"
+        android:layout_height="220sp"
+        android:background="@drawable/rounded_pop_up"
+        android:padding="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_cards"
+            style="@style/AppTheme.pop_ups_titulo"
+            android:fontFamily="@font/verdana_bold"
+            android:text="¡Atención! "
+            android:textColor="#FF2330"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/texts_cards"
+            style="@style/AppTheme.text_card"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Cancelar podría ponerte en peligro \n¿Realmente deseas cancelar el rescate?"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_cards" />
+
+        <TextView
+            android:id="@+id/button_no"
+            android:layout_width="140sp"
+            android:layout_height="50sp"
+            android:background="@drawable/rounded_boton_rojo"
+            android:fontFamily="@font/verdana_bold"
+            android:gravity="center"
+            android:paddingHorizontal="10sp"
+            android:paddingVertical="13sp"
+            android:text="NO"
+            android:textColor="@color/white_1"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/button_si"
+            android:layout_width="140sp"
+            android:layout_height="50sp"
+            android:background="@drawable/rounded_boton"
+            android:fontFamily="@font/verdana_bold"
+            android:gravity="center"
+            android:paddingHorizontal="10sp"
+            android:paddingVertical="13sp"
+            android:text="SI"
+            android:textColor="@color/white_1"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

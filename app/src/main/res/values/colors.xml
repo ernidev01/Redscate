@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azul">#37B2FF</color>
+    <color name="gris">#7B7B7B</color>
+    <color name="black_1">#FF000000</color>
+    <color name="white_1">#FFFFFFFF</color>
+    <color name="rojo">#FF2330</color>
+    <color name="boton_general">#2F2F2F</color>
+    <color name="borde_boton_rojo">#F6F6F6</color>
+    <color name="boton_rojo">#FF000F</color>
+    <color name="text_view">#888888</color>
+</resources>

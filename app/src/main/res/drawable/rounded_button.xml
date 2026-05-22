@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo azul del componente -->
+    <solid android:color="#F9F9F9" /> <!-- Fondo azul -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/black" />
+    <corners android:radius="10dp" /> <!-- Sin redondeo, o ajusta según prefieras -->
+</shape>
